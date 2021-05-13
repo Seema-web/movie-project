@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link  rel="stylesheet" href="{% static 'static/css/movie.css' %}">
+    <link  href="https://fonts.googleapis.com/css?family=Merriweather" rel = "stylesheet">
+
+  <style>
+   body
+   {
+   background-image: url(https://images.unsplash.com/photo-1503892679967-59819084b88f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80);
+   }
+
+    form{
+
+
+
+    }
+
+  </style>
+  </head>
+  <body>
+    <div class="container" align="center">
+      <h1>Add Movie Information</h1>
+      <form method="POST">
+        {{form.as_p}}
+        {%csrf_token%}
+        <input type="submit" class='btn btn-primary' value="Add Movie">
+
+      </form>
+
+
+    </div>

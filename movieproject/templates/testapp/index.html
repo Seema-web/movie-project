@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <link  rel="stylesheet" href="{% static 'static/css/movie.css' %}">
+    <link  href="https://fonts.googleapis.com/css?family=Merriweather" rel = "stylesheet">
+    <style>
+
+          body{
+            background-image: url(https://images.unsplash.com/photo-1503892679967-59819084b88f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=401&q=80);
+            color:red;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+
+          }
+          .jumbotron {
+              margin-top: 220px;
+              color : red;
+              background-color: orange;
+              background-repeat: no-repeat;
+              background-size: cover;
+              font-family: 'Merriweather', serif;
+            }
+    </style>
+
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron" align='center'>
+
+        <div class="container">
+          <h1>Movie Potral </h1>
+          <p> Up To Date Movies Information </p>
+          <a class="btn btn-primary btn-lg" href="/addmovie" role="button">Add Movie</a>&nbsp&nbsp&nbsp&nbsp
+          <a class="btn btn-primary btn-lg" href="/listmovie" role="button">List Movie</a>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
